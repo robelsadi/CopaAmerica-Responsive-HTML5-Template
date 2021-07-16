@@ -21,7 +21,6 @@ h2{
     color: #FFFFFF;
     margin-bottom: 27px;
 }
-
 span a{
    background-color: #E02C6D;
     padding: 10px 24px;
@@ -32,7 +31,6 @@ span a:hover{
     transform: scale(1.1);
     transition: transform 1s;
  }
- 
 /*================================
             Header CSS 
 ==================================*/
@@ -100,8 +98,7 @@ main{
     flex-direction: column;
     align-items: center;
     background-color: #fff;
-    box-shadow: 0px 4px 4px 0px #00000040;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 .all-playeer{
     display: grid;
@@ -123,7 +120,7 @@ main{
             Champion Awards CSS 
 ==================================*/
 .title{
-    margin: 40px 0px;
+    margin: 20px 0px;
 }
 .title h2{
     color: #000;
@@ -137,25 +134,35 @@ main{
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     align-items: center;
-    background-image: url(images/bg.jpg);
-    background-repeat: no-repeat;
-    padding: 10px 5px;
-    width: 100%;
-    overflow: hidden;
-    background-size:cover;
 }
 .single-award{
     background-color: #fdfdfd;
     padding: 15px;
 }
+.awards-photo {
+    text-align: center;
+}
 .awards-photo img{
     width: 85%;
 }
-.awards-photo:hover .awards-caption{
-    display: block;
-}
 .awards-caption{
-    display: none;
+    margin: 25px 0px;
+}
+.awards-caption h3{
+    color: #111111;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 20px 0;
+    background-color: #fbc02d;
+    text-align: center;
+    text-transform: uppercase;
+}
+.awards-caption h3:hover{
+    color: #fbc02d;
+    background-color: #000;
+    cursor: pointer;
+    transition: 0.9s;   
 }
 /*================================
             Upcoming Match CSS 
@@ -166,35 +173,86 @@ main{
 .upcoming-match{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    align-items: center;
+    place-items: center;
+    margin-bottom: 50px;
+    background-color: rgb(253, 253, 253);
+    padding: 100px 0px;
+    box-shadow: rgb(0 0 0 / 25%) 0px 4px 4px;
 }
-
+.match-photo img{
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 7px #efefef;
+    border-radius: 5px;
+}
+.match-photo img:hover{
+    transform: scale(1.4);
+    transition: transform 2s;
+    cursor: progress;
+}
+.match-detail{
+    text-align: center;
+}
+.time-status h3{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.time-status span{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #fbc02d;
+    display: inherit;
+}
 /*================================
             Footer CSS 
 ==================================*/
 footer{
     width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    background-color: rgb(212, 212, 212);
-    box-shadow: 0px 4px 4px 0px #00000040;
-    margin-bottom: 60px;
+    background-color: #FFFFFF;
+    margin-bottom: 40px;
+    flex-direction: column;
 }
 .footer-detail{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 20px 0px;
 }
 .footer-logo img{
     width: 410px;
     height: 100px;
-    margin: 15px 0px;
+    margin: 15px 0px 0px 0px;
 }
-
-
+.social-media{
+    margin: 0px 0px 10px 0px;
+}
+.social-media a .fab{
+    font-size: 20px;
+    padding: 6px;
+    margin: 10px;
+    color: #969BAB;
+    border-radius: 100%;
+    background-color: #969bab47;
+    align-items: center;
+}
+.social-media a .fab:hover{
+    color: #111111;
+    border-radius: 100%;
+    background-color: #fbc02d;
+    transform: scale(1.5);
+    transition: transform 1s;
+}
+.Copyright-Author p{
+    color: #111111;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
 /*=================================================
             Media Quary/ Responsive CSS 
 ===================================================*/
