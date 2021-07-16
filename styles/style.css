@@ -120,6 +120,57 @@ main{
     width: 100%;
 }
 /*================================
+            Champion Awards CSS 
+==================================*/
+.title{
+    margin: 40px 0px;
+}
+.title h2{
+    color: #000;
+    font-size: 28px;
+    border-bottom: 4px solid #fbc02d;
+    text-transform: capitalize;
+    display: inline-block;
+}
+.champion-awards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    background-image: url(images/bg.jpg);
+    background-repeat: no-repeat;
+    padding: 10px 5px;
+    width: 100%;
+    overflow: hidden;
+    background-size:cover;
+}
+.single-award{
+    background-color: #fdfdfd;
+    padding: 15px;
+}
+.awards-photo img{
+    width: 85%;
+}
+.awards-photo:hover .awards-caption{
+    display: block;
+}
+.awards-caption{
+    display: none;
+}
+/*================================
+            Upcoming Match CSS 
+==================================*/
+.match-status h2{
+    color: #000;
+}
+.upcoming-match{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+/*================================
             Footer CSS 
 ==================================*/
 footer{
