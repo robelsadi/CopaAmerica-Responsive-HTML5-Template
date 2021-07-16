@@ -21,6 +21,17 @@ h2{
     color: #FFFFFF;
     margin-bottom: 27px;
 }
+h3{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #111111;
+}
+p{
+    font-size: 16px;
+    line-height: 2;
+    color: #6C6C6C;
+}
 span a{
    background-color: #E02C6D;
     padding: 10px 24px;
@@ -260,17 +271,49 @@ footer{
 /* For Mobile Devices  */
 
    @media only screen  and (max-width:688px) {
-
-}
-/* For Tablet Devices  */
-
-@media only screen and (min-width: 688px) and 
-(max-width: 992px){
-    
-}
-
-/* For Desktop Devices  */
-
-@media only screen and (min-width: 992px) {
-    
+    .container{
+        width: 100%;
+    }
+    h2{
+        Font-family: Poppins;
+        Font-size: 40px;
+        color: #FFFFFF;
+        margin-bottom: 27px;
+    }
+    .header-slider {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .nav-wrapper{
+           display: none;
+       }
+       .header-menu{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+       }
+       .slider-image img {
+        width: 85%;
+        margin-top: 40px;
+        border: none;
+        }
+        .all-playeer{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .champion-awards{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .upcoming-match{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .upcoming-match h3{
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 18px;
+        }
 }
